@@ -1,0 +1,20 @@
+name: Build and Deploy Image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-image:
+    runs-on: ubuntu-latest 
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 
+        
+      - name: Use action to build and deploy image
+        uses: victormazeli/kanon-gaming-Interview/.github/workflows/actions/action.yml@main
+        with:
+          k8s-manifest-path: "k8s/manifest/"  
+
