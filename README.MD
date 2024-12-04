@@ -1,0 +1,1 @@
+This REPO contains the API (golang service) and its k8s manifest file.
