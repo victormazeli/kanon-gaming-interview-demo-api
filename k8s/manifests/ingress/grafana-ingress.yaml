@@ -9,7 +9,7 @@ metadata:
     traefik.ingress.kubernetes.io/router.tls.certresolver: "letsencrypt"
 spec:
   rules:
-    - host: grafana.example.com
+    - host: grafana.iamcloudevops.xyz
       http:
         paths:
         - path: /
